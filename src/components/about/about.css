@@ -1,0 +1,41 @@
+.aboutContainer {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 69px;
+  background-color: rgb(161, 200, 248);
+}
+
+@media (max-width: 600px) {
+  .aboutContainer {
+    display: flex;
+    height:150vh; 
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    padding: 50px;
+  }
+
+  .aboutTitle{
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+
+  .aboutTitle h1{
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .aboutBtns button{
+    font-size: 15px;
+    padding: 10px;
+    background-color: aliceblue;
+  }
+
+  .activeBtn{
+    color: white;
+    background-color: #4299e1 !important ;
+    /* text-decoration: underline; */
+  }
+
+}

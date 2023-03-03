@@ -1,0 +1,9 @@
+.companyLogo{
+    height: 80px;
+}
+
+@media (max-width: 600px) {
+    .companyLogo{
+        height: 60px;
+    }
+}

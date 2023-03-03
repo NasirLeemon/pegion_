@@ -1,0 +1,49 @@
+
+
+@media (max-width: 600px) {
+
+    .managementMain{
+/* background-color: chartreuse; */
+/* padding: 2%; */
+display: flex;
+flex-direction: column;
+/* justify-content: center; */
+align-items: center;
+        
+    }
+    .profileMain{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profileTitle{
+        font-size: 20px;
+        padding: 2.5%;
+    }
+
+.profileImageDiv{
+
+}
+
+.profileImg{
+    height: 300px;
+}
+
+
+.profileDescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    text-align: center;
+}
+
+.profileDescription h1{
+    padding-top: 3%;
+    font-size: large;
+    margin-bottom: 3%;
+}
+}
