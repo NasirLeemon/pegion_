@@ -1,49 +1,93 @@
+.managementMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profileMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  margin: 10px 0;
+}
+
+.profileTitle {
+  font-size: 20px;
+  padding: 2.5%;
+}
 
 
-@media (max-width: 600px) {
+.profileImg {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  padding: 2%;
+        border: 2px solid white;
+}
 
+.profileDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  text-align: center;
+}
+
+.profileDescription h1 {
+  padding-top: 3%;
+  font-size: large;
+  margin-bottom: 3%;
+}
+
+.profileTitle {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 2.5%;
+}
+
+.profileDescription h5 {
+  padding: 5%;
+}
+
+@media only screen and (min-width: 768px) {
     .managementMain{
-/* background-color: chartreuse; */
-/* padding: 2%; */
-display: flex;
-flex-direction: column;
-/* justify-content: center; */
-align-items: center;
-        
-    }
-    .profileMain{
+        margin: 20px 0;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
     }
 
-    .profileTitle{
-        font-size: 20px;
-        padding: 2.5%;
+    .profileMain{
+  border: none;
+
     }
+    .profileImg {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        padding: 2%;
+        border: 2px solid white;
+      }
 
-.profileImageDiv{
+      .profileTitle {
+        font-size: 20px;
+        font-weight: 700;
+        padding: 2.5%;
+      }
+      
+      .profileDescription{
+        text-align: left;
+        margin-left: 7%;
+      }
+      .profileDescription h5 {
+        padding: 5%;
+      }
+
 
 }
 
-.profileImg{
-    height: 300px;
-}
 
-
-.profileDescription{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3%;
-    text-align: center;
-}
-
-.profileDescription h1{
-    padding-top: 3%;
-    font-size: large;
-    margin-bottom: 3%;
-}
-}

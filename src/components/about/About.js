@@ -1,4 +1,6 @@
+import { Navbar } from "@material-tailwind/react";
 import React, { useState } from "react";
+import Services from "../services/Services";
 import "./about.css";
 import Achievements from "./Achievements";
 import History from "./History";
@@ -15,9 +17,10 @@ const About = () => {
   }
 
   return (
-    <div className="aboutContainer">
+    <>
+    <div className="aboutContainer bg-cyan-100">
       <div className="aboutTitle">
-        <h1 className="text-white">About Us</h1>
+        <h1 className="">About Us</h1>
       </div>
       <div className="aboutBtns">
       <button key={1} id={'1'} className={` ${isActive === "1" ? "activeBtn" : undefined}`} onClick={handleClick}>History</button>
@@ -25,10 +28,10 @@ const About = () => {
       <button key={3} id={'3'} className={` ${isActive === "3" ? "activeBtn" : undefined}`} onClick={handleClick}>Achievements</button>
       </div>
 
-      <div className="about-content mt-10">
+      <div className="about-content">
       {value === '1' && 
       <History />
-      }
+    }
       {value === '2' && 
       <Management />
       }
@@ -37,6 +40,10 @@ const About = () => {
       }
       </div>
     </div>
+    <div>
+      <Services />
+    </div>
+    </>
   );
 };
 

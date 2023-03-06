@@ -2,12 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --mainColor : #053e6c;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: "D-DINCondensed-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* font-family: sohne, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
+
+
+.growth { transition: all .3s ease-in-out; }
+.growth:hover { transform: scale(1.1); }
+
 

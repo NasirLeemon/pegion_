@@ -1,6 +1,7 @@
 import React from 'react'
 import Profile from './profile/Profile'
 import './profile/profile.css'
+import './management.css'
 
 const Management = () => {
   const profileData = [
