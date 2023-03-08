@@ -101,7 +101,7 @@ hr {
 }
 .contact-body-text h2{
   font-size: 20px;
-  font-weight: 600;
+  font-weight: bold;
 }
 .contact-body-text h4 {
     font-size: 15px;
@@ -116,14 +116,14 @@ input[type=text], select {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid var(--mainColor);
     border-radius: 4px;
     box-sizing: border-box;
   }
 
   input[type=submit] {
     width: 100%;
-    background-color: #4CAF50;
+    background-color: var(--mainColor);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -137,13 +137,101 @@ input[type=text], select {
     height: 150px;
     padding: 12px 20px;
     box-sizing: border-box;
-    border: 2px solid #ccc;
+    border: 2px solid var(--mainColor);
     border-radius: 4px;
-    background-color: #f8f8f8;
-    resize: none;
+    background-color: #fff;
+    /* resize: none; */
   }
 
 
   .contact-body-input-right{
     padding-top: 20px;
+}
+
+.contact-body-input-left h1{
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--mainColor);
+}
+
+
+.contact-body-input-right h1{
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--mainColor);
+  /* padding-bottom: 10px; */
+  /* margin-bottom: 20px; */
+}
+
+@media only screen and (min-width:968px){
+  .contact-body-input-left{
+    padding-top: 30px;
+    width: 50%;
+}
+.contact-body-input-right{
+  /* padding-top: 30px; */
+  padding: 0;
+  width: 50%;
+}
+
+.contact-body-input-right h1{
+  padding-bottom: 2px;
+}
+
+.contact-body {
+  padding: 100px 70px;
+}
+}
+
+/* ---------------- contact Footer -------------- */
+
+.contact-footer{
+  color: #fff;
+  background-color: var(--mainColor);
+  margin-top: 50px;
+  padding: 50px 25px;
+}
+
+.contact-footer-logo img{
+  width: 150px;
+}
+
+.contact-us{
+  padding: 15px 0;
+}
+
+.contact-us-icon{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+@media only screen and (min-width:968px){
+
+  .contact-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17%;
+  }
+
+  .contact-footer-service{
+    padding: 0;
+  }
+
+  .contact-footer-logo{
+    margin-top: 40px;
+  }
+
+  .contact-footer-copywrite{
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 0;
+    gap: 50px;
+  }
 }
