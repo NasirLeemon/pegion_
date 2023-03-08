@@ -1,6 +1,6 @@
 import React from "react";
 import "./aboutHeader.css";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 
 const AboutHeader = () => {
@@ -13,11 +13,14 @@ const AboutHeader = () => {
           With meticulously chosen carriers, we provide scheduled service on the world's major air routes so you can plan with confidence and become more efficient. We provide a variety of highly flexible packages so you can choose delivery speeds that best suit your needs.
           </h3>
         </div>
-        <div className="about_header_image grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-2 md:gap-4 lg:gap-6">
+        <div className="about_header_image grid grid-cols-1 gap-2 lg:grid-cols-3 lg:place-items-center">
           <div className="image_container">
-            <div className="image-wrapper-text">
+          <Link to='company'>
+          <div className="overlayed h-full w-full absolute">
+              
+            </div>
+            <div className="image-wrapper-text growth ">
               <h2>ASSOCIATION</h2>
-              <Link to='company'>
               <button>
                 Learn More{" "}
                 <span>
@@ -25,16 +28,20 @@ const AboutHeader = () => {
                   <BsArrowRight />{" "}
                 </span>
               </button>
-              </Link>
             </div>
             <div>
               <img src="/images/aboutHeader/building.jpg" alt="" />
             </div>
+            </Link>
           </div>
           <div className="image_container">
-            <div className="image-wrapper-text">
+          <Link to='company'>
+          <div className="overlayed h-full w-full absolute">
+              
+            </div>
+            <div className="image-wrapper-text growth">
               <h2>Philosophy</h2>
-              <Link to='company'>
+              
               <button>
                 Learn More{" "}
                 <span>
@@ -42,16 +49,19 @@ const AboutHeader = () => {
                   <BsArrowRight />{" "}
                 </span>
               </button>
-              </Link>
             </div>
             <div>
               <img src="/images/aboutHeader/culture.jpg" alt="" />
             </div>
+            </Link>
           </div>
           <div className="image_container">
-            <div className="image-wrapper-text">
+          <Link to='company'>
+          <div className="overlayed h-full w-full absolute">
+              
+            </div>
+            <div className="image-wrapper-text growth">
               <h2>Career</h2>
-              <Link to='company'>
               <button>
                 Learn More{" "}
                 <span>
@@ -59,15 +69,15 @@ const AboutHeader = () => {
                   <BsArrowRight />{" "}
                 </span>
               </button>
-              </Link>
             </div>
             <div>
               <img src="/images/aboutHeader/career.jpg" alt="" />
             </div>
+            </Link>
           </div>
+          
         </div>
       </div>
-      <Outlet />
     </>
   );
 };
