@@ -63,13 +63,12 @@ hr {
   }
 
   .contact-header-text {
-    /* background-color: aqua; */
     width: 70%;
     background-color: #fff;
     position: absolute;
-    /* margin: 0 auto; */
-    bottom: 50px;
+    bottom: -20px;
     left: 15%;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
   .contact-header-text h1 {
     padding-top: 40px;
@@ -84,9 +83,10 @@ hr {
 
   hr {
     width: 100%;
-    color: black;
+    color: rgb(32, 32, 32);
     height: 2px;
-    margin: 10px auto;
+    /* margin: 10px auto; */
+    margin-top: 10px;
   }
 }
 

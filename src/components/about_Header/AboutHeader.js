@@ -15,7 +15,7 @@ const AboutHeader = () => {
         </div>
         <div className="about_header_image grid grid-cols-1 gap-2 lg:grid-cols-3 lg:place-items-center">
           <div className="image_container">
-          <Link to='company'>
+          <Link to='/company'>
           <div className="overlayed h-full w-full absolute">
               
             </div>
@@ -35,7 +35,7 @@ const AboutHeader = () => {
             </Link>
           </div>
           <div className="image_container">
-          <Link to='company'>
+          <Link to='/company'>
           <div className="overlayed h-full w-full absolute">
               
             </div>
@@ -56,7 +56,7 @@ const AboutHeader = () => {
             </Link>
           </div>
           <div className="image_container">
-          <Link to='company'>
+          <Link to='/company'>
           <div className="overlayed h-full w-full absolute">
               
             </div>

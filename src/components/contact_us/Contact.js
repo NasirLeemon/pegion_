@@ -18,7 +18,7 @@ const Contact = () => {
                 <h1>General Enquires</h1>
                 <h4>Please complete the form below to contact us.
 An AGS expert will get in touch with you shortly.</h4>
-                <hr color='black'/>
+                <hr />
             </div>
         </div>
         <div className='contact-body wrapper'>

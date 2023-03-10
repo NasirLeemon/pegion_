@@ -15,7 +15,7 @@ const About = () => {
 
   return (
     
-      <div className="aboutContainer bg-cyan-100">
+      <div className="aboutContainer">
         <div className="aboutTitle">
           <h1 className="">About Us</h1>
         </div>

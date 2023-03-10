@@ -43,7 +43,7 @@
 }
 
 .navElement ul a.active {
-color: coral;
+color: rgb(227, 187, 173);
   font-weight: 500;
   position: relative;
 }
@@ -55,7 +55,7 @@ color: coral;
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: coral;
+  background-color: rgb(238, 205, 192);
 }
 
 
@@ -78,7 +78,7 @@ color: coral;
     position: absolute;
     right: 0;
     top: 0px;
-    background-color: #acc3da;
+    background-color: var(--mainColor);
     width: 0px;
     height: 100vh;
     transition: all 0.3s ease-in;

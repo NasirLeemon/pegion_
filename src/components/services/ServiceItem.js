@@ -1,22 +1,28 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import "./services.css";
 
-const ServiceItem = ({service, setPopUp, foundService}) => {
+const ServiceItem = ({service}) => {
 
-    const handleClick = (id) => {
-        setPopUp(true)
-        foundService(id)
-    }
+
+
+    // const handleClick = (id) => {
+    //   console.log(id);
+      
+    // }
+
+
   return (
     <>
-   
-      <div className=" serviceImageDiv growth" onClick={()=>handleClick(service.id)}>
+    <Link to={`/services/${service.id}`}>
+      <div className=" serviceImageDiv growth" >
         <div className="serviceItemText">
           <h1 className="serviceItemTitle text-white">{service?.title}</h1>
           <h3 className="serviceItemDesc text-white">{service?.description}</h3>
         </div>
         <img src={service?.image} alt="" className='growth' />
       </div>
+    </Link>
     </>
   )
 }
