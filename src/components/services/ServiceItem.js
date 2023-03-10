@@ -4,17 +4,11 @@ import "./services.css";
 
 const ServiceItem = ({service}) => {
 
-
-
-    // const handleClick = (id) => {
-    //   console.log(id);
-      
-    // }
-
+console.log(service );
 
   return (
     <>
-    <Link to={`/services/${service.id}`}>
+    <Link to={`/services/${service?.id}`}>
       <div className=" serviceImageDiv growth" >
         <div className="serviceItemText">
           <h1 className="serviceItemTitle text-white">{service?.title}</h1>

@@ -51,9 +51,9 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="about" element={<AboutHeader />} />
         <Route path="/company" element={<About />} />
-        <Route exact path="/services" element={<Services services={initialState}/>} />
-        <Route exact path="/contact" element={<Contact />} />
-        <Route exact path="/services/:id" element={<SingleService services={initialState}/>} />
+        <Route path="/services" element={<Services services={initialState}/>} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/services/:id" element={<SingleService services={initialState}/>} />
       </Routes>
     </BrowserRouter>
   );
