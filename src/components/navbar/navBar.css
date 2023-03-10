@@ -2,7 +2,7 @@
   background-color: var(--mainColor);
   position: fixed;
   z-index: 100;
-  border-bottom: 0.2px solid gray;
+  box-shadow: rgba(250, 249, 249, 0.35)x 1.95px 2.6px;
 }
 
 .navContainer {
@@ -31,6 +31,7 @@
 }
 
 .navElement ul li {
+  text-transform: uppercase;
   margin-right: 60px;
 }
 
@@ -69,6 +70,8 @@ color: coral;
     cursor: pointer;
     padding-right: 25px;
     z-index: 101;
+    color: #fff;
+    margin-right: 5px;
   }
 
   .navElement {

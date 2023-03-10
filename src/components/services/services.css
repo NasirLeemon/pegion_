@@ -60,11 +60,12 @@ background-image: linear-gradient(rgba(13, 22, 59, 0.7), rgba(32, 30, 30, 0.7)),
 
  @media only screen and (min-width: 768px) {
     .serviceTitle{
-        font-size: 50px;
+        font-size: 75px;
     padding: 25px 0;
     font-weight: 800;
     color: white;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    margin: 20px 0 45px 0;
     }
 
     .serviceItemText{

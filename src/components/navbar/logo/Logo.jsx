@@ -3,7 +3,7 @@ import './logo.css'
 
 const Logo = () => {
   return (
-    <div>
+    <div className='logo-wrapper'>
         <img className='companyLogo' src="images/logo/cropped-PIGION-2020-1-2021.png" alt="Pigeon Logistics" />
     </div>
   )

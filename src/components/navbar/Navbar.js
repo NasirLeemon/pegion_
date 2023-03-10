@@ -20,7 +20,7 @@ const Navbar = () => {
             <Logo />
         </div>
         <div className="navMenu-icon" onClick={handleShowNavbar}>
-          <GiHamburgerMenu />
+          <GiHamburgerMenu size={30}/>
         </div>
         <div className={`navElement ${showNavbar && 'active'}`}>
           <ul>

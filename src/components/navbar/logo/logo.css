@@ -1,9 +1,17 @@
-.companyLogo{
-    height: 80px;
+
+.logo-wrapper{
+    /* background-color: #fff; */
+    padding: 10px 0;
 }
 
-@media (max-width: 600px) {
+.companyLogo{
+    height: 45px;
+    width: 120px;
+    margin: 10px 0 2px 20px;
+}
+
+@media only screen and (min-width: 600px) {
     .companyLogo{
-        height: 60px;
+        height: 50px;
     }
 }
