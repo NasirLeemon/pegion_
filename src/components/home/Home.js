@@ -3,7 +3,6 @@ import React from "react";
 import AboutHeader from "../about_Header/AboutHeader";
 import CallButton from "../call/CallButton";
 import Contact from "../contact_us/Contact";
-import Overview from "../overView/Overview";
 import Services from "../services/Services"
 import HomeHeader from "./HomeHeader";
 const Home = () => {
@@ -12,7 +11,6 @@ const Home = () => {
     <HomeHeader />
     <AboutHeader />
     <Services />
-    <Overview />
     <Contact />
 
 

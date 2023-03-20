@@ -2,6 +2,8 @@ import React from "react";
 import "./aboutHeader.css";
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
+import Overview from "../overView/Overview";
+
 
 const AboutHeader = () => {
   return (
@@ -78,6 +80,7 @@ const AboutHeader = () => {
           
         </div>
       </div>
+    <Overview />
     </>
   );
 };

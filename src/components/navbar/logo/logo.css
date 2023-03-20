@@ -1,17 +1,19 @@
 
 .logo-wrapper{
-    /* background-color: #fff; */
-    padding: 10px 0;
+    padding: 3px 0;
 }
 
 .companyLogo{
-    height: 45px;
-    width: 120px;
-    margin: 10px 0 2px 20px;
+    height: 60px;
+    width: 150px;
+    margin: 7px 0 2px 10px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
     .companyLogo{
-        height: 50px;
+        height: 70px;
+    width: 240px;
+    box-shadow: rgba(234, 237, 240, 0.35) 0px 5px 15px;
+    
     }
 }

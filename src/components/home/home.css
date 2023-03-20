@@ -24,7 +24,6 @@ video{
 .content h1{
     font-size: 45px;
     font-weight: 700;
-    /* padding-bottom: 15px; */
 }
 
 .content h3{
@@ -48,16 +47,13 @@ video{
     margin-top: 15px;
     padding: 10px 35px;
     border: 2px solid var(--mainColor);
-    /* background-color: var(--mainColor); */
 }
 
 .home-Btn:hover{
     background-color: var(--mainColor);
 }
 
-/* .content h1 {
-    font-size: 2em;
-} */
+
 
 @media only screen and (min-width: 768px) {
     .mainVideo{
@@ -98,7 +94,9 @@ video{
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, .5);
+        background-color: black;
+        /* background-color: var(--mainColor); */
+        opacity: 0.4; 
     
     }
 

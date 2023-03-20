@@ -1,14 +1,9 @@
 .aboutContainer {
-  /* background-image: url(/public/images/aboutvector.png); */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 0;
-  padding: 50px;
-  /* background-color:  rgb(21 94 117); */
+  padding: 100px 40px 0;
   color: black;
 
 }
@@ -28,10 +23,8 @@
 }
 
 .aboutBtns button {
-  border: 1px solid rgb(125 211 252);
+  border: 1px solid var(--mainColor);
   font-size: 15px;
-  /* padding: 10px; */
-  background-color: aliceblue;
   color: #053e6c;
   padding: 15px 20px;
 }
@@ -44,6 +37,7 @@
 @media only screen and (min-width: 768px) {
 
   .aboutContainer {
+  padding: 50px 40px 0;
     width: 100vw;
     /* background-color:  rgb(21 94 117); */
     display: flex;
@@ -71,12 +65,9 @@
   }
 
   .aboutBtns button {
-    border: 1px solid rgb(125 211 252);
     color: #053e6c;
-    border-radius: 3%;
     font-size: 15px;
     padding: 15px 35px;
-    background-color: aliceblue;
     text-transform: uppercase;
   }
 
