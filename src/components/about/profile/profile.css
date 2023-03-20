@@ -1,4 +1,5 @@
 .managementMain {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,8 +10,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid white;
   margin: 10px 0;
+  box-shadow: rgba(7, 66, 106, 0.25) 0px 50px 100px -20px, rgba(9, 84, 119, 0.3) 0px 30px 60px -30px, rgba(8, 90, 135, 0.35) 0px -2px 6px 0px inset;
 }
 
 .profileTitle {
@@ -59,17 +60,20 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 30px;
   }
 
   .profileMain {
     border: none;
+    box-shadow: rgba(21, 135, 188, 0.25) 0px 50px 100px -20px, rgba(13, 112, 130, 0.3) 0px 30px 60px -30px, rgba(14, 117, 145, 0.35) 0px -2px 6px 0px inset;
   }
   .profileImg {
     height: 250px;
     width: 250px;
     border-radius: 50%;
-    padding: 2%;
+    padding: 3%;
     border: 2px solid white;
+    background-color: var(--mainColor);
   }
 
   .profileTitle {

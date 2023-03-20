@@ -1,6 +1,7 @@
 import React from "react";
 import ServiceItem from "./ServiceItem";
 import "./services.css";
+// import { BiPaperPlane } from 'react-icons/bs'
 
 
 const Services = () => {
@@ -9,7 +10,7 @@ const Services = () => {
   {
       id: 1,
       title: "AIR FREIGHT",
-      description: "Air Feight is Easy",
+      description: "Air Feight <br /> is Easy",
       image: "/images/services/air.jpg",
     },
     {

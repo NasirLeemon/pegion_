@@ -2,7 +2,9 @@ import React from 'react'
 
 const Achievements = () => {
   return (
-    <div>Achievements</div>
+    <div>
+      <img className='p-5' src='/images/achievements.jpg' alt='achievements'/>
+    </div>
   )
 }
 

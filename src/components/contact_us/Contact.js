@@ -65,7 +65,7 @@ An AGS expert will get in touch with you shortly.</h4>
                     </div>
                 </div>
                 <div className='flex gap-3 pb-4'>
-                    <BsFacebook size={24}/>
+                    {/* <BsFacebook size={24}/> */}
                     <AiFillTwitterCircle size={24}/>
                     <AiFillYoutube size={24}/>
                     <FaLinkedinIn size={24}/>

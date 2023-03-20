@@ -5,4 +5,5 @@
 
 .overview-wrapper img{
     object-fit: cover;
+    margin: 50px 0;
 }
