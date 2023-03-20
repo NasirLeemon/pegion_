@@ -10,31 +10,31 @@ const Services = () => {
   {
       id: 1,
       title: "AIR FREIGHT",
-      description: "Air Feight <br /> is Easy",
+      subTitle : 'Air Freight is Easy',
       image: "/images/services/air.jpg",
     },
     {
       id: 2,
       title: "TRUCKING SERVICE",
-      description: "Trucking is Easy",
+      subTitle : 'Trucking is Easy',
       image: "/images/services/truck.jpg",
     },
     {
       id: 3,
       title: "OCEAN FREIGHT",
-      description: "Ocean Feight is Easy",
+      subTitle: "Ocean Feight is Easy",
       image: "/images/services/ship.jpg",
     },
     {
       id: 4,
       title: "CUSTOM CLEARANCE",
-      description: "Easy Custom Clearance ",
+      subTitle: "Easy Custom Clearance ",
       image: "/images/services/custom.jpg",
     },
     {
       id: 5,
       title: "WEARHOUSE",
-      description: "Easy Wearhouse Access",
+      subTitle: "Easy Wearhouse Access",
       image: "/images/services/wearhouse.jpg",
     },
 ]

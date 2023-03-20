@@ -188,7 +188,7 @@ input[type=text], select {
 .contact-footer{
   color: #fff;
   background-color: var(--mainColor);
-  margin-top: 50px;
+  /* margin-top: 50px; */
   padding: 50px 25px;
 }
 
@@ -206,23 +206,38 @@ input[type=text], select {
   gap: 15px;
   padding: 10px 0;
 }
+.contact-footer-address{
+  margin-top: 20px;
+}
+
+.contact-footer-phone{
+  margin-top: 20px;
+}
+
+.contact-footer-service{
+  margin-top: 20px;
+}
+
+.contact-footer-network{
+  margin-top: 20px;
+}
 
 @media only screen and (min-width:968px){
 
+
+
   .contact-footer{
+    padding: 80px 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 17%;
+    gap: 80px;
   }
+
 
   .contact-footer-service{
     padding: 0;
   }
 
-  .contact-footer-logo{
-    margin-top: 40px;
-  }
 
   .contact-footer-copywrite{
     height: max-content;

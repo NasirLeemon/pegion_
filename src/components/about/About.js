@@ -14,7 +14,7 @@ const About = () => {
   };
 
   return (
-    
+  
       <div className="aboutContainer">
         <div className="aboutTitle">
           <h1 className="">About Us</h1>
@@ -52,6 +52,7 @@ const About = () => {
           {value === "3" && <Achievements />}
         </div>
       </div>
+      
     
   );
 };

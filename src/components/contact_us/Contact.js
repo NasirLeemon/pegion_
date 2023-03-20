@@ -1,11 +1,6 @@
 import React from 'react'
 import './contact.css'
-import {BsFillChatDotsFill} from 'react-icons/bs'
-import {FaHandshake} from 'react-icons/fa'
-import {BsFacebook} from 'react-icons/bs'
-import {AiFillTwitterCircle} from 'react-icons/ai'
-import {FaLinkedinIn} from 'react-icons/fa'
-import {AiFillYoutube} from 'react-icons/ai'
+import ContactFooter from '../contact_footer/ContactFooter'
 
 const Contact = () => {
   return (
@@ -47,48 +42,7 @@ An AGS expert will get in touch with you shortly.</h4>
             </div>
             </div>
         </div>
-        <div className='contact-footer wrapper'>
-            <div className='contact-footer-logo'>
-                <img src='/images/logo/cropped-PIGION-2020-1-2021.png' alt=''/>
-                <div className='contact-us'>
-                    <div className='contact-us-icon'>
-                        <BsFillChatDotsFill size={30}/>
-                        <div>
-                            Contact Us
-                        </div>
-                    </div>
-                    <div className='contact-us-icon'>
-                        <FaHandshake size={34}/>  
-                        <div>
-                            Careers
-                        </div>
-                    </div>
-                </div>
-                <div className='flex gap-3 pb-4'>
-                    {/* <BsFacebook size={24}/> */}
-                    <AiFillTwitterCircle size={24}/>
-                    <AiFillYoutube size={24}/>
-                    <FaLinkedinIn size={24}/>
-                </div>
-            </div>
-            <div className='contact-footer-service pt-8 flex flex-col'>
-                <h1 className='text-3xl'>Our Services</h1>
-                <a className='font-thin hover:underline pt-2'  href='www.pegion.com'>International</a>
-                <a className='font-thin hover:underline pt-2'  href='www.pegion.com'>Domestic</a>
-                <a className='font-thin hover:underline pt-2'  href='www.pegion.com'>Transport</a>
-                <a  className='font-thin hover:underline pt-2' href='www.pegion.com'>International</a>
-                <a  className='font-thin hover:underline pt-2' href='www.pegion.com'>International</a>
-            </div>
-            <div className='contact-footer-network pt-8 flex flex-col'>
-                <h1 className='text-3xl'>Our Network</h1>
-                <a className='font-thin hover:underline pt-2' href='www.pegion.com'>Africa</a>
-                <a className='font-thin hover:underline pt-2' href='www.pegion.com'>Asia</a>
-                <a className='font-thin hover:underline pt-2' href='www.pegion.com'>Carribean</a>
-                <a className='font-thin hover:underline pt-2' href='www.pegion.com'>Europe</a>
-                <a className='font-thin hover:underline pt-2' href='www.pegion.com'>France</a>
-                <a className='font-thin hover:underline pt-2' href='www.pegion.com'>Middle East</a>
-            </div>
-        </div>
+        <ContactFooter />
         <div className='contact-footer-copywrite h-[300px] py-10 px-6 flex flex-col gap-3 bg-gray-900 text-white font-thin'>
             <h4 className='text-sm'>Copywrite Pigeon @2023</h4>
             <h4>Terms of Use</h4>
