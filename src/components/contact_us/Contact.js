@@ -1,6 +1,7 @@
 import React from 'react'
 import './contact.css'
 import ContactFooter from '../contact_footer/ContactFooter'
+import { Link } from 'react-router-dom'
 
 const Contact = () => {
   return (
@@ -19,7 +20,7 @@ An AGS expert will get in touch with you shortly.</h4>
         <div className='contact-body wrapper'>
             <div className='contact-body-text lg:px-12 lg:pt-5'>
                 <h2>Would you like a quotation?</h2>
-                <h4>Please provide more details of your move by <a href='www.google.com' className='text-red-700 underline'>clicking here.</a></h4>
+                <h4>Please provide more details of your move by <Link to='/qoute' className='text-red-700 underline'>clicking here.</Link> </h4>
             </div>
             <div className='contact-body-input lg:flex lg:justify-center lg:items-center lg:gap-6'>
             <div className='contact-body-input-left'>

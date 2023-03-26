@@ -13,6 +13,7 @@ import { IoAirplane } from 'react-icons/io5'
 import {GiShipBow} from 'react-icons/gi'
 import {FaWarehouse} from 'react-icons/fa'
 import {IoSettingsSharp} from 'react-icons/io5'
+import Qoute from "./components/qoute/Qoute";
 
 
 function App() {
@@ -145,6 +146,8 @@ function App() {
           path="/services/:id"
           element={<SingleService services={initialState} />}
         />
+        <Route path="/quote" element={<Qoute />} />
+
       </Routes>
     </BrowserRouter>
   );
