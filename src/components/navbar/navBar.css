@@ -43,7 +43,7 @@
 }
 
 .navElement ul a.active {
-color: rgb(227, 187, 173);
+color: yellow;
   font-weight: 500;
   position: relative;
 }
@@ -55,7 +55,7 @@ color: rgb(227, 187, 173);
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: rgb(238, 205, 192);
+  background-color: yellow;
 }
 
 

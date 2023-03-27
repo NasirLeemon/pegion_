@@ -2,10 +2,17 @@ import React from 'react'
 import videoBg from "../../assets/videoBg.mp4";
 import "./home.css";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
+
+
 
 const HomeHeader = () => {
   return (
-    <div className="mainVideo">
+    <motion.div className="mainVideo"
+    initial={{opacity: 0}}
+    animate={{opacity : 1}}
+    exit={{opacity: 0}}
+    >
         <div className="overLay"></div>
         <video src={videoBg} autoPlay loop muted />
         <div className="content">
@@ -15,7 +22,7 @@ const HomeHeader = () => {
             <NavLink to="/about">See More</NavLink>
           </button>
         </div>
-      </div>
+      </motion.div>
   )
 }
 

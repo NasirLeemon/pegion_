@@ -2,6 +2,7 @@ import React from "react";
 import ServiceItem from "./ServiceItem";
 import "./services.css";
 // import { BiPaperPlane } from 'react-icons/bs'
+import { motion } from "framer-motion";
 
 
 const Services = () => {
@@ -41,7 +42,16 @@ const Services = () => {
 
   return (
     <>
-      <div className="serviceMain">
+      <motion.div className="serviceMain"
+      
+    //   initial={{opacity: 0}}
+    // animate={{opacity : 1}}
+    // exit={{opacity: 0}}
+
+    initial={{width : 0}}
+    animate={{width : "100%"}}
+    exit={{x : window.innerWidth , transition : {duration : 0.2}}}
+      >
         <div className="serviceTitle">
           <h1>Services</h1>
         </div>
@@ -56,7 +66,7 @@ const Services = () => {
           </div>
         <div>
         </div>
-      </div>
+      </motion.div>
       <div></div>
     </>
   );

@@ -3,12 +3,17 @@ import "./aboutHeader.css";
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 import Overview from "../overView/Overview";
-
+import {motion} from 'framer-motion'
 
 const AboutHeader = () => {
   return (
     <>
-      <div className="about-header-container">
+      <motion.div className="about-header-container"
+      
+      initial={{width : 0}}
+      animate={{width : "100%"}}
+      exit={{x : window.innerWidth , transition : {duration : 0.2}}}
+      >
         <div className="about_header_text">
           <h1>LOGISTICS AND SUPPLY</h1>
           <h3>
@@ -79,7 +84,7 @@ const AboutHeader = () => {
           </div>
           
         </div>
-      </div>
+      </motion.div>
     <Overview />
     </>
   );

@@ -2,6 +2,10 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import ContactFooter from "../contact_footer/ContactFooter";
 import "./singleService.css";
+import { motion } from "framer-motion";
+
+
+
 const SingleService = ({ services }) => {
   // this services is coming from app js
 
@@ -14,12 +18,17 @@ const SingleService = ({ services }) => {
 
   return (
     <>
-      <div className="serviceMain">
+      <motion.div className="serviceMain"
+      
+      initial={{width : 0}}
+      animate={{width : "100%"}}
+      exit={{x : window.innerWidth , transition : {duration : 0.5}}}
+      >
         <div className="serviceTitle">
           <h1>{title}</h1>
         </div>
         <div className="quote">
-          <Link to="/qoute">Get Qoute!</Link>
+          <Link to="/quote">Get Qoute!</Link>
         </div>
         <div className="serviceSingleItem">
           <div className="serviceItemImage">
@@ -41,12 +50,12 @@ const SingleService = ({ services }) => {
               ))}
             </ul>
             <div className="quote">
-            <Link to="/qoute">Get Qoute!</Link>
+            <Link to="/quote">Get Qoute!</Link>
           </div>
           </div>
         </div>
        
-      </div>
+      </motion.div>
       <ContactFooter />
 
     </>

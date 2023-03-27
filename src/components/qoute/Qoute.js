@@ -2,6 +2,7 @@ import React from "react";
 import "./qoute.css";
 import { useRef } from 'react'
 import emailjs  from '@emailjs/browser';
+import { motion } from "framer-motion";
 
 
 const Qoute = () => {
@@ -26,7 +27,16 @@ const Qoute = () => {
 
 
   return (
-    <div className="qoute-container">
+    <motion.div className="qoute-container"
+    
+    // initial={{opacity: 0}}
+    // animate={{opacity : 1}}
+    // exit={{opacity: 0}}
+
+    initial={{width : 0}}
+    animate={{width : "100%"}}
+    exit={{x : window.innerWidth , transition : {duration : 0.2}}}
+    >
       <div className="qoute-header wrapper relative">
         <div className="qoute-header-image">
           <img src="/images/qoute/qoute.jpg" alt="" />
@@ -81,7 +91,7 @@ const Qoute = () => {
         </form>
         <div></div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

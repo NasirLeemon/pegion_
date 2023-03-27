@@ -4,6 +4,7 @@ import ContactFooter from '../contact_footer/ContactFooter'
 import { Link } from 'react-router-dom'
 import { useRef } from 'react'
 import emailjs  from '@emailjs/browser';
+import { motion } from 'framer-motion'
 
 const Contact = () => {
 const form = useRef()
@@ -43,7 +44,12 @@ const form = useRef()
 
 
   return (
-    <div className='contact-container'>
+    <motion.div className='contact-container'
+    
+    initial={{width : 0}}
+    animate={{width : "100%"}}
+    exit={{x : window.innerWidth , transition : {duration : 0.5}}}
+    >
         <div className='contact-header wrapper relative'>
             <div className='contact-header-image'>
                 <img src='/images/contact/enquire.avif' alt='' />
@@ -89,7 +95,7 @@ An AGS expert will get in touch with you shortly.</h4>
             <h4>Terms of Use</h4>
             <h4>Privacy Policy</h4>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

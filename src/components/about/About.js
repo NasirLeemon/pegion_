@@ -3,6 +3,7 @@ import "./about.css";
 import Achievements from "./Achievements";
 import History from "./History";
 import Management from "./Management";
+import { motion } from "framer-motion";
 
 const About = () => {
   const [value, setValue] = useState("1");
@@ -15,7 +16,12 @@ const About = () => {
 
   return (
   
-      <div className="aboutContainer">
+      <motion.div className="aboutContainer"
+      
+      initial={{width : 0}}
+      animate={{width : "100%"}}
+      exit={{x : window.innerWidth , transition : {duration : 0.2}}}
+      >
         <div className="aboutTitle">
           <h1 className="">About Us</h1>
         </div>
@@ -51,7 +57,7 @@ const About = () => {
           {value === "2" && <Management />}
           {value === "3" && <Achievements />}
         </div>
-      </div>
+      </motion.div>
       
     
   );
