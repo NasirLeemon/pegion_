@@ -17,19 +17,21 @@ const About = () => {
   return (
   
       <motion.div className="aboutContainer"
-      
-      initial={{width : 0}}
-      animate={{width : "100%"}}
-      exit={{x : window.innerWidth , transition : {duration : 0.2}}}
+      initial={{ x: "100%" }}
+          animate={{ x: 0 }}
+          exit={{ x: "-100%" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+
       >
         <div className="aboutTitle">
           <h1 className="">About Us</h1>
         </div>
         <div className="aboutBtns">
           <button
+          cl
             key={1}
             id={"1"}
-            className={` ${isActive === "1" ? "activeBtn" : undefined}`}
+            className={` ${isActive === "1" ? "activeBtn" : undefined} growth`}
             onClick={handleClick}
           >
             History
@@ -37,7 +39,7 @@ const About = () => {
           <button
             key={2}
             id={"2"}
-            className={` ${isActive === "2" ? "activeBtn" : undefined}`}
+            className={` ${isActive === "2" ? "activeBtn" : undefined} growth`}
             onClick={handleClick}
           >
             Management
@@ -45,7 +47,7 @@ const About = () => {
           <button
             key={3}
             id={"3"}
-            className={` ${isActive === "3" ? "activeBtn" : undefined}`}
+            className={` ${isActive === "3" ? "activeBtn" : undefined} growth`}
             onClick={handleClick}
           >
             Achievements

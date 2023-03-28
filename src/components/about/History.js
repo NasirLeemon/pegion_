@@ -1,8 +1,14 @@
 import React from "react";
 import "./history.css";
+import { motion } from "framer-motion";
 const History = () => {
   return (
-    <div className="history-main">
+    <motion.div className="history-main"
+    initial={{ x: "100%" }}
+    animate={{ x: 0 }}
+    exit={{ x: "-100%" }}
+    transition={{ duration: 0.8, ease: "easeOut" }}
+    >
       <div className="historyTitle">
         <h3 className="font-bold">Our History</h3>
       </div>
@@ -55,7 +61,7 @@ const History = () => {
           </h6>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

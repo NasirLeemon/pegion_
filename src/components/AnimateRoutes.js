@@ -17,9 +17,10 @@ const AnimateRoutes = ({ initialState }) => {
 
   return (
     <div>
-        <AnimatePresence>
+        <AnimatePresence mode="wait" initial={false}>
       <Routes location={location} key={location?.pathname}>
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/home" element={<Home />} />
         <Route path="/about" element={<AboutHeader />} />
         <Route path="/company" element={<About />} />
         <Route path="/services" element={<Services services={initialState} />}/>

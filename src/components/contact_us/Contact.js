@@ -48,7 +48,7 @@ const form = useRef()
     
     initial={{width : 0}}
     animate={{width : "100%"}}
-    exit={{x : window.innerWidth , transition : {duration : 0.5}}}
+    exit={{x : window.innerWidth , transition : {duration : 0.4}}}
     >
         <div className='contact-header wrapper relative'>
             <div className='contact-header-image'>

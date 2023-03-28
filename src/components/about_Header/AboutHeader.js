@@ -6,23 +6,71 @@ import Overview from "../overView/Overview";
 import { motion } from "framer-motion";
 
 const AboutHeader = () => {
+
+  const line = "LOGISTICS AND SUPPLY";
+  
+  const sentance = {
+    hidden : { opacity : 1},
+    visible  : {
+      opacity : 1,
+      transition : {
+        delay : 0.5,
+        staggerChildren : 0.1
+      },
+    },
+  }
+
+  const letter = {
+    hidden : {
+      opacity : 0, y : 50,
+    },
+    visible: {
+      opacity : 1,
+      y : 0
+    },
+  }
+
+
+
+
   return (
     <>
       <motion.div
         className="about-header-container"
-        initial={{ width: 0 }}
-        animate={{ width: "100%" }}
-        exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}
-      >
+  
+        initial={{scaleY: 0}}
+        animate={{scaleY : 1}}
+        exit={{scaleY: 0}}
+        transition={{duration : 0.45}}
+    >
         <div className="about_header_text">
-          <h1>LOGISTICS AND SUPPLY</h1>
-          <h3>
+          <motion.h1
+            variants={sentance}
+            initial='hidden'
+            animate='visible'
+          >
+
+
+          {line.split('').map((char, index) => {
+    return (
+      <motion.span key={char + '-' + index} variants={letter}>
+        {char}
+      </motion.span>
+    )
+  })}
+          </motion.h1>
+          <motion.h3
+          
+          initial={{ y: -1000 }}
+           animate={{ y: 0 }}
+           transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             With meticulously chosen carriers, we provide scheduled service on
             the world's major air routes so you can plan with confidence and
             become more efficient. We provide a variety of highly flexible
             packages so you can choose delivery speeds that best suit your
             needs.
-          </h3>
+          </motion.h3>
         </div>
         <div className="about_header_image grid grid-cols-1 gap-2 lg:grid-cols-3 lg:place-items-center">
           <motion.div className="image_container"

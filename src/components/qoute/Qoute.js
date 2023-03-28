@@ -35,7 +35,7 @@ const Qoute = () => {
 
     initial={{width : 0}}
     animate={{width : "100%"}}
-    exit={{x : window.innerWidth , transition : {duration : 0.2}}}
+    exit={{x : window.innerWidth , transition : {duration : 0.4}}}
     >
       <div className="qoute-header wrapper relative">
         <div className="qoute-header-image">

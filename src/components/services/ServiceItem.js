@@ -17,7 +17,7 @@ const ServiceItem = ({service}) => {
     ref={ref}
     initial={{opacity: 0, translateX: service?.id % 2 === 0 ? -100 : 100 , translateY : -100 }}
     animate={{opacity : 1, translateX : 0, translateY : 0}}
-    transition={{duration : 0.3, delay : service?.id * 0.3}}
+    transition={{duration : 0.2, delay : service?.id * 0.2}}
     >
     <Link to={`/services/${service?.id}`}>
       <div className=" serviceImageDiv growth" >

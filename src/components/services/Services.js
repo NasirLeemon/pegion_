@@ -40,20 +40,27 @@ const Services = () => {
     },
 ]
 
+
   return (
     <>
       <motion.div className="serviceMain"
       
-    //   initial={{opacity: 0}}
-    // animate={{opacity : 1}}
-    // exit={{opacity: 0}}
-
-    initial={{width : 0}}
-    animate={{width : "100%"}}
-    exit={{x : window.innerWidth , transition : {duration : 0.2}}}
+      initial={{scaleX: 0}}
+      animate={{scaleX : 1}}
+      exit={{scaleX: 0}}
+      transition={{duration  : 0.45}}
       >
         <div className="serviceTitle">
           <h1>Services</h1>
+          <motion.h3
+           initial={{ x: -1000 }}
+           animate={{ x: 0 }}
+           transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+    Pigeon Logistics is specialized in shipping and distribution of Fashion merchandise from Bangladesh to the United States, Canada, Europe and other countries in the world.
+    Pigeon Logistics provides exceptional freight shipping services via:
+ 
+</motion.h3>
         </div>
         
           <div className="serviceItems grid grid-flow-col grid-rows-3 lg:grid-rows-2 gap-5 ">

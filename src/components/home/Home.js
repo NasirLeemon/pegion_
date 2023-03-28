@@ -5,25 +5,17 @@ import Contact from "../contact_us/Contact";
 import Qoute from "../qoute/Qoute";
 import Services from "../services/Services"
 import HomeHeader from "./HomeHeader";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 const Home = () => {
   return (
-    <motion.div 
-    // initial={{opacity: 0}}
-    // animate={{opacity : 1}}
-    // exit={{opacity: 0}}
-
-    initial={{width : 0}}
-    animate={{width : "100%"}}
-    exit={{x : window.innerWidth , transition : {duration : 0.2}}}
-    >
+    <div>
     <HomeHeader />
     <AboutHeader />
     <Services />
     <Qoute />
     <Contact />
     <CallButton className='callButton absolute top-4 right-0' />
-    </motion.div>
+    </div>
   );
 };
 
