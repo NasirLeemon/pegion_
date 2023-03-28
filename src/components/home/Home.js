@@ -1,5 +1,4 @@
 import React from "react";
-// import About from "../about/About";
 import AboutHeader from "../about_Header/AboutHeader";
 import CallButton from "../call/CallButton";
 import Contact from "../contact_us/Contact";
@@ -16,7 +15,7 @@ const Home = () => {
 
     initial={{width : 0}}
     animate={{width : "100%"}}
-    exit={{x : window.innerWidth , transition : {duration : 0.5}}}
+    exit={{x : window.innerWidth , transition : {duration : 0.2}}}
     >
     <HomeHeader />
     <AboutHeader />

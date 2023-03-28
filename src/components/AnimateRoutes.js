@@ -8,6 +8,7 @@ import About from "./about/About";
 import SingleService from "./service_items/SingleService";
 import Services from "./services/Services";
 import {AnimatePresence} from "framer-motion";
+import Notfound from "./Notfound";
 // import {} from "framer-motion/dist/framer-motion";
 
 
@@ -25,6 +26,7 @@ const AnimateRoutes = ({ initialState }) => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/services/:id" element={<SingleService services={initialState} />}/>
         <Route path="/quote" element={<Qoute />} />
+        <Route path="*"  element={<Notfound />}/>
       </Routes>
         </AnimatePresence>
     </div>

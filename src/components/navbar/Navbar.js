@@ -24,14 +24,14 @@ const Navbar = () => {
         </div>
         <div className={`navElement ${showNavbar && 'active'}`}>
           <ul>
-            <li>
+            <li className='growth'>
               <NavLink to="/">Home</NavLink>
             </li>
-            <li><NavLink to="/about">About Us</NavLink></li>
-            <li><NavLink to="/services">Services</NavLink></li>
-            <li><NavLink to="/career">Career</NavLink></li>
-            <li><NavLink to="/quote">Get Quote</NavLink></li>
-            <li><NavLink to="/contact">Contact</NavLink></li>
+            <li className='growth'><NavLink to="/about">About Us</NavLink></li>
+            <li className='growth'><NavLink to="/services">Services</NavLink></li>
+            <li className='growth'><NavLink to="/career">Career</NavLink></li>
+            <li className='growth'><NavLink to="/quote">Get Quote</NavLink></li>
+            <li className='growth'><NavLink to="/contact">Contact</NavLink></li>
           </ul>
         </div>
       </div>

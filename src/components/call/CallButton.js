@@ -6,7 +6,8 @@ const CallButton = () => {
 
   const email = '@gmail.com'
 
-    let circleClasses = "bg-red rounded-full";
+    let circleClasses = "bg-red rounded-full growth";
+    
 
     const handleClick = () => {
       window.location.href = 'tel:+8801601463594';
@@ -15,10 +16,10 @@ const CallButton = () => {
   return (
     <div>
         <div style={{backgroundColor : '#053e6c' , color: '#fff'}} className='allContacts fixed px-4 right-0 bottom-[40vh] lg:bottom-[40vh]  lg:right-0    py-5 rounded-md bg-white flex flex-col justify-center items-center gap-4'>
-            <div className='bg-coral'>
+            <div className='bg-coral growth'>
             <IoCallSharp size={36} color='' className={circleClasses} onClick={handleClick}/>
             </div>
-            <div>
+            <div className='growth'>
             <MdEmail size={36} color='' className={circleClasses} onClick={() => window.open(`mailto:${email}?subject=Subject&body=Body`)} />
             </div>
         </div>
