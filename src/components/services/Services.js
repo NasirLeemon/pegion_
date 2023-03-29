@@ -3,6 +3,7 @@ import ServiceItem from "./ServiceItem";
 import "./services.css";
 // import { BiPaperPlane } from 'react-icons/bs'
 import { motion } from "framer-motion";
+import AnimateHeading from "../animateText/AnimateHeading";
 
 
 const Services = () => {
@@ -45,13 +46,12 @@ const Services = () => {
     <>
       <motion.div className="serviceMain"
       
-      initial={{scaleX: 0}}
-      animate={{scaleX : 1}}
-      exit={{scaleX: 0}}
-      transition={{duration  : 0.45}}
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.4 } }}
       >
         <div className="serviceTitle">
-          <h1>Services</h1>
+         <AnimateHeading line='SERVICES' />
           <motion.h3
            initial={{ x: -1000 }}
            animate={{ x: 0 }}

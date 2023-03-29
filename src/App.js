@@ -9,6 +9,7 @@ import {GiShipBow} from 'react-icons/gi'
 import {FaWarehouse} from 'react-icons/fa'
 import {IoSettingsSharp} from 'react-icons/io5'
 import AnimateRoutes from "./components/AnimateRoutes";
+import CallButtonWrapper from "./components/call/CallButtonWrapper ";
 
 
 function App() {
@@ -127,8 +128,10 @@ function App() {
   ];
   return (
     <BrowserRouter>
+    <CallButtonWrapper>
       <Navbar />
      <AnimateRoutes initialState={initialState}/>
+    </CallButtonWrapper>
     </BrowserRouter>
   );
 }

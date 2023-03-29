@@ -17,10 +17,9 @@ const About = () => {
   return (
   
       <motion.div className="aboutContainer"
-      initial={{ x: "100%" }}
-          animate={{ x: 0 }}
-          exit={{ x: "-100%" }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.4 } }}
 
       >
         <div className="aboutTitle">

@@ -21,6 +21,15 @@ const letter = {
   },
 }
 
+
+
+return (
+<motion.h1 
+variants={sentance}
+initial='hidden'
+animate='visible'
+>
+
 {line2.split('').map((char, index) => {
   return (
     <motion.span key={char + '-' + index} variants={letter}>
@@ -28,7 +37,6 @@ const letter = {
     </motion.span>
   )
 })}
+</motion.h1>
 
-variants={sentance}
-initial='hidden'
-animate='visible'
+)
