@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './contact.css'
 import ContactFooter from '../contact_footer/ContactFooter'
 import { Link } from 'react-router-dom'
@@ -7,15 +7,25 @@ import emailjs  from '@emailjs/browser';
 import { motion } from 'framer-motion'
 
 const Contact = () => {
-const form = useRef()
- const [message, setMessage] = useState({
-    name: '',
-    email : '',
-    phone : '',
-    country: '',
-    message : ''
- });
+    const [showAlert, setShowAlert] = useState(false);
+    const form = useRef()
+    const [message, setMessage] = useState({
+       name: '',
+       email: '',
+       phone: '',
+       country: '',
+       message : ''
+    }); 
 
+    useEffect(() => {
+        if (showAlert) {
+          // reload page after 3 seconds
+          setTimeout(() => {
+            setShowAlert(false)
+          }, 1000);
+        }
+      }, [showAlert]);
+    
     const handleChange = (e) => {
 
         setMessage({
@@ -33,6 +43,7 @@ const form = useRef()
         process.env.REACT_APP_TEMPLATE_ID, form.current, 
         process.env.REACT_APP_PUBLIC_KEY)
     .then((result) => {
+        setShowAlert(true);
         console.log(result.text);
     }, (error) => {
         console.log(error.text);
@@ -66,27 +77,34 @@ An AGS expert will get in touch with you shortly.</h4>
                 <h2>Would you like a quotation?</h2>
                 <h4>Please provide more details of your move by <Link to='/qoute' className='text-red-700 underline'>clicking here.</Link> </h4>
             </div>
+            
             <form ref={form} onSubmit={sendEmail}>
             <div className='contact-body-input lg:flex lg:justify-center lg:items-center lg:gap-6'>
 
             <div className='contact-body-input-left'>
                 <h1>Your Details</h1>
-                    <input placeholder='Name...' name='user_name' type='text' onChange={handleChange} />
-                    <input name='user_email' placeholder='Email...' type='text' onClick={handleChange} />
-                    <input name='phone' placeholder='Phone...' type='text' onClick={handleChange} />
-                    <input name='country' placeholder='Country...' type='text' onClick={handleChange} />
+                    <input required placeholder='Name...' name='user_name' type='text' onChange={handleChange} />
+                    <input required name='user_email' placeholder='Email...' type='text' onClick={handleChange} />
+                    <input required name='phone' placeholder='Phone...' type='text' onClick={handleChange} />
+                    <input required name='country' placeholder='Country...' type='text' onClick={handleChange} />
             </div>
             <div className='contact-body-input-right'>
            
                     <h1>Message</h1>
-                    <textarea name='message' placeholder='Write Here...' rows={4} cols={50} onClick={handleChange}>
+                    <textarea required name='message' placeholder='Write Here...' rows={4} cols={50} onClick={handleChange}>
 
                     </textarea>
+                    {showAlert && (
+        <div style={{ backgroundColor: "#053e6c", color: "white", padding: "10px", display:'block' }}>
+          Email sent successfully!
+        </div>
+      )}
                     <input type='submit' value='Send' />
               
             </div>
             </div>
             </form>
+           
         </div>
         
         <ContactFooter />

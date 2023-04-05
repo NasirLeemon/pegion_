@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import videoBg from "../../assets/videoBg.mp4";
 import "./home.css";
 import { NavLink } from "react-router-dom";
@@ -6,16 +6,11 @@ import { motion } from "framer-motion";
 import AnimateHeading from "../animateText/AnimateHeading";
 
 const HomeHeader = () => {
-  useEffect(() => {
-    const preloadVideo = async () => {
-      try {
-        await videoBg.preload();
-      } catch (error) {
-        console.log("Error preloading video: ", error);
-      }
-    };
-    preloadVideo();
-  }, []);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+
+  const handleVideoLoad = () => {
+    setIsVideoLoaded(true);
+  };
 
   return (
     <motion.div
@@ -25,8 +20,9 @@ const HomeHeader = () => {
       exit={{ x: window.innerWidth, transition: { duration: 0.4 } }}
     >
       <div className="overLay"></div>
-      <video src={videoBg} autoPlay loop muted />
-      <div className="content">
+      <video src={videoBg} autoPlay loop muted onCanPlayThrough={handleVideoLoad} />
+      {!isVideoLoaded && <div className="loader">Loading...</div>}
+      <div className={`content ${isVideoLoaded ? "visible" : ""}`}>
         <AnimateHeading
           line="PIGEON LOGISTICS"
           classes="text-[75px] text-white growth"

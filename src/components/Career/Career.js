@@ -14,7 +14,7 @@ const Career = () => {
         className="bg-cover bg-center h-64 flex flex-col justify-center items-center text-white"
         style={{ backgroundImage: `url('/images/background.png')` }}
       >
-        <h1 className="text-4xl font-bold mb-4">Join Our Team</h1>
+        <h1 className=" text-4xl pt-10 md:pt-20 md:text-7xl font-bold mb-4">Join Our Team</h1>
         <p className="text-lg">We're always looking for talented individuals to join us</p>
       </div>
       <div className="container mx-auto py-12">

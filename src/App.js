@@ -1,18 +1,20 @@
-import React from "react";
-import "./App.css";
-import { BrowserRouter} from "react-router-dom";
-import Navbar from "./components/navbar/Navbar";
 
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import Navbar from "./components/navbar/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
 import { FaShippingFast } from "react-icons/fa";
 import { IoAirplane } from 'react-icons/io5'
-import {GiShipBow} from 'react-icons/gi'
-import {FaWarehouse} from 'react-icons/fa'
-import {IoSettingsSharp} from 'react-icons/io5'
+import { GiShipBow } from 'react-icons/gi'
+import { FaWarehouse } from 'react-icons/fa'
+import { IoSettingsSharp } from 'react-icons/io5'
 import AnimateRoutes from "./components/AnimateRoutes";
 import CallButtonWrapper from "./components/call/CallButtonWrapper ";
-
+import Loader from "./components/Loader/Loader";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
 
   const initialState = [
     {
@@ -126,12 +128,22 @@ function App() {
 
     },
   ];
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000); // Change this to adjust the loading time
+  }, []);
+
   return (
     <BrowserRouter>
-    <CallButtonWrapper>
-      <Navbar />
-     <AnimateRoutes initialState={initialState}/>
-    </CallButtonWrapper>
+      {isLoading ? <Loader /> : (
+        <CallButtonWrapper>
+          <Navbar />
+          <ScrollToTop />
+          <AnimateRoutes initialState={initialState} />
+        </CallButtonWrapper>
+      )}
     </BrowserRouter>
   );
 }

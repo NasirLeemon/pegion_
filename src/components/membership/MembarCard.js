@@ -3,13 +3,13 @@ import './carousel.css'
 
 const MembarCard = ({ image, text }) => {
   return (
-    <div className="membercard sm:flex-col sm:gap-10 md:flex md:justify-center md:items-end md:gap-10">
+    <div className="membercard flex flex-col md:flex-row md:justify-center md:items-end md:p-10 gap-2 md:gap-5">
       <div>
         <img src={image} alt="" />
       </div>
-      <div>
-        <h1>Member of - </h1>
-        <h2>{text}</h2>
+      <div className="membercardText">
+        <h1 className="font-bold">Member of- </h1>
+        <h2 className="text-[20px]">{text}</h2>
       </div>
     </div>
   );
