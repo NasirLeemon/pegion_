@@ -1,13 +1,15 @@
 import React from "react";
-import "./history.css";
 import { motion } from "framer-motion";
+import "./history.css";
+
 const History = () => {
   return (
-    <motion.div className="history-main"
-    initial={{ x: "100%" }}
-    animate={{ x: 0 }}
-    exit={{ x: "-100%" }}
-    transition={{ duration: 0.8, ease: "easeOut" }}
+    <motion.div
+      className="history-main"
+      initial={{ x: "100%" }}
+      animate={{ x: 0 }}
+      exit={{ x: "-100%" }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <div className="historyTitle">
         <h3 className="font-bold">Our History</h3>
@@ -26,39 +28,36 @@ const History = () => {
             <span className="font-bold">PIGEON LOGISTICS</span> was established
             in 2005. The office is located at the heart of Dhaka, the capital
             city of Bangladesh.
-            <br />
-            <p className="mt-2">
-              PL is the freight-forwarding company, formed with the sole
-              objective of specializing in International Freight Forwarding
-              activities. PL selves is engaged in diverse shipping related
-              activities in Bangladesh providing FCL & LCL consolidation to
-              worldwide via Transshipment and door delivery service to CIS
-              destinations and special import and export project cargo handling
-              and inland haulage.
-            </p>
-            <p className="mt-2">
-              PL enjoys reputation within both the local and overseas customers
-              for delivering quality freight forwarding services. PL has
-              excellent airfreight handling exposure & has secured many leading
-              customers, working exclusively with the Company.
-            </p>
-            <p className="mt-2">
-              We have taken the opportunity to re-evaluate our entire operations
-              in the light of the changing global economic situation and that we
-              have positioned as customer driven organization with superior
-              services and a professional approach to the transport business,
-              which is unique of its nature in the country.
-            </p>
-            <p className="mt-2">
-              Clearly, we are in a competitive industry but PL is fully
-              committed as an International Freight Forwarding Company offering
-              specialized OCEAN FREIGHT & AIR FREIGHT services. We remain a
-              customer driven organization but our role extends to that of
-              advisors and business partners to our customers and we are
-              committed to developing long term relationship built on trust and
-              mutual respect.
-            </p>
           </h6>
+          <p className="mt-2">
+            PL is the freight-forwarding company, formed with the sole objective
+            of specializing in International Freight Forwarding activities. PL
+            selves is engaged in diverse shipping related activities in
+            Bangladesh providing FCL & LCL consolidation to worldwide via
+            Transshipment and door delivery service to CIS destinations and
+            special import and export project cargo handling and inland haulage.
+          </p>
+          <p className="mt-2">
+            PL enjoys reputation within both the local and overseas customers
+            for delivering quality freight forwarding services. PL has excellent
+            airfreight handling exposure & has secured many leading customers,
+            working exclusively with the Company.
+          </p>
+          <p className="mt-2">
+            We have taken the opportunity to re-evaluate our entire operations in
+            the light of the changing global economic situation and that we have
+            positioned as customer driven organization with superior services
+            and a professional approach to the transport business, which is
+            unique of its nature in the country.
+          </p>
+          <p className="mt-2">
+            Clearly, we are in a competitive industry but PL is fully committed
+            as an International Freight Forwarding Company offering specialized
+            OCEAN FREIGHT & AIR FREIGHT services. We remain a customer driven
+            organization but our role extends to that of advisors and business
+            partners to our customers and we are committed to developing long
+            term relationship built on trust and mutual respect.
+          </p>
         </div>
       </div>
     </motion.div>

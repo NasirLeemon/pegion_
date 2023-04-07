@@ -76,7 +76,7 @@ const Qoute = () => {
             <div className="qoute-body-input-left">
               <h1>Details</h1>
               <div className="flex flex-col lg:flex-row lg:gap-5 lg:mt-5">
-                <div className="w-[50%]">
+                <div className="lg:w-[50%]">
                   <label>Name</label>
                   <input onChange={handleChange} required name="user_name" type="text" />
                   <label>Point Of Loading</label>
@@ -86,7 +86,7 @@ const Qoute = () => {
                   <label>CBM (Cubic Meter) </label>
                   <input onChange={handleChange}  name='CBM' placeholder="" type="text" />
                 </div>
-                <div className="w-[50%]">
+                <div className="lg:w-[50%]">
                   <label>Email</label>
                   <input onChange={handleChange} required placeholder="" type="text" name="user_email" />
                   <label>Point of Destination</label>

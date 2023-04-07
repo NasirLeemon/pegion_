@@ -6,7 +6,6 @@
   .wrapper {
     width: 100%;
     margin: 0 auto;
-    /* padding: 0 6%; */
   }
   
   .qoute-header {
@@ -21,7 +20,6 @@
   }
   
   .qoute-header-text {
-    /* background-color: aqua; */
     width: 100%;
   }
   
@@ -47,7 +45,6 @@
     }
   
     .qoute-header-image img {
-      height: 400px;
       object-fit: cover;
     }
 
@@ -59,7 +56,6 @@
   
     .qoute-header-text h4 {
       font-weight: 400;
-      /* padding-top: 10px; */
       text-align: center;
       padding: 10px 200px;
     }
@@ -68,7 +64,6 @@
       width: 100%;
       color: rgb(32, 32, 32);
       height: 2px;
-      /* margin: 10px auto; */
       margin-top: 10px;
     }
   }
@@ -144,8 +139,6 @@
     font-size: 20px;
     font-weight: bold;
     color: var(--mainColor);
-    /* padding-bottom: 10px; */
-    /* margin-bottom: 20px; */
   }
   
   @media only screen and (min-width:968px){
@@ -154,7 +147,6 @@
       width: 50%;
   }
   .qoute-body-input-right{
-    /* padding-top: 30px; */
     padding: 0;
     width: 50%;
   }

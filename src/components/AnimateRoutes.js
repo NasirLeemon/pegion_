@@ -11,8 +11,6 @@ import {AnimatePresence} from "framer-motion";
 import Notfound from "./Notfound";
 import Career from "./Career/Career";
 
-// import {} from "framer-motion/dist/framer-motion";
-
 
 const AnimateRoutes = ({ initialState }) => {
   const location = useLocation();

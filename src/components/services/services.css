@@ -3,7 +3,7 @@
 
 .serviceMain{
     
-background-image: linear-gradient(rgba(13, 22, 59, 0.7), rgba(32, 30, 30, 0.7)), url('/public/images/background.png');
+background-image: linear-gradient(rgba(13, 22, 59, 0.7), rgba(32, 30, 30, 0.7)), url('/public/images/globe.jpg');
  padding: 5%;   
  background-repeat: no-repeat;
  background-size: cover;
@@ -50,7 +50,6 @@ background-image: linear-gradient(rgba(13, 22, 59, 0.7), rgba(32, 30, 30, 0.7)),
 
 .serviceItemText{
     width: 100%;
-    /* background-color: var(--mainColor); */
     position: absolute;
     left: 0;
     bottom: 0;

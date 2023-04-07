@@ -1,60 +1,58 @@
-@media screen and (min-width: 768px) {
-  .history-main {
+
+
+  @media screen and (min-width: 768px) {
+    .history-main {
     margin: 50px auto;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  }
-
-  .historyContent {
-    display: flex; 
-  }
-
-  .historyTitle {
-        text-align: center;
-    display: block;
+    }
+    
+    .historyContent {
+    display: flex;
+    }
+    
+    .historyTitle {
+    text-align: center;
     font-size: 30px;
     color: #053e6c;
-  }
-
-  .historyTitle h3{
+    }
+    
+    .historyTitle h3 {
     padding-top: 30px;
-  }
-
-  .history-imgDiv {
+    }
+    
+    .history-imgDiv {
     width: 50%;
-  }
-
-  .history-img {
+    }
+    
+    .history-img {
     margin-top: 55px;
     padding-left: 5%;
-
-  }
-
-  .history-textDiv {
+    }
+    
+    .history-textDiv {
     width: 50%;
     padding: 3%;
     color: var(--mainColor);
-  }
-
-  .history-textDiv h5{
+    text-align: justify;
+    }
+    
+    .history-textDiv h5 {
     font-size: 35px;
     font-weight: 600;
     margin-bottom: 15px;
-  }
-  .history-textDiv {
-    text-align: justify;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .history-main {
+    }
+    }
+    
+    @media screen and (max-width: 600px) {
+    .history-main {
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-  }
-
-  .historyTitle {
+    }
+    
+    .historyTitle {
     font-size: 21px;
     margin-bottom: 10px;
     font-weight: 700;
@@ -62,33 +60,36 @@
     text-transform: uppercase;
     line-height: 1em;
     letter-spacing: 3px;
-  }
-
-  .historyContent {
+    }
+    
+    .historyContent {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
-
-  .history-imgDiv {
+    }
+    
+    .history-imgDiv {
     display: block;
-  }
-
-  .history-img {
+    }
+    
+    .history-img {
     width: 100%;
-  }
-.history-textDiv p{
-  text-indent: 30px;
-}
-  .history-textDiv {
+    }
+    
+    .history-textDiv {
     text-align: justify;
     padding: 5% 3%;
     color: var(--mainColor);
-  }
-  .history-textDiv h5{
+    }
+    
+    .history-textDiv h5 {
     font-size: large;
     padding: 10px 0;
     font-weight: 600;
-  }
-}
+    }
+    
+    .history-textDiv p {
+    text-indent: 30px;
+    }
+    }

@@ -63,7 +63,7 @@ const Contact = () => {
     >
         <div className='contact-header wrapper relative'>
             <div className='contact-header-image'>
-                <img src='/images/contact/enquire.avif' alt='' />
+                <img src='/images/contact/enquire.jpg' alt='' />
             </div>
             <div className='contact-header-text '>
                 <h1>General Enquires</h1>

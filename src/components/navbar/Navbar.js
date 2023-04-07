@@ -39,14 +39,15 @@ const Navbar = () => {
             <li className='growth'>
               <NavLink to="/services" onClick={handleLinkClick}>Services</NavLink>
             </li>
-            <li className='growth'>
-              <NavLink to="/career" onClick={handleLinkClick}>Career</NavLink>
-            </li>
+          
             <li className='growth'>
               <NavLink to="/quote" onClick={handleLinkClick}>Get Quote</NavLink>
             </li>
             <li className='growth'>
               <NavLink to="/contact" onClick={handleLinkClick}>Contact</NavLink>
+            </li>
+            <li className='growth'>
+              <NavLink to="/career" onClick={handleLinkClick}>Career</NavLink>
             </li>
           </ul>
         </div>
