@@ -5,14 +5,15 @@ import MembarCard from "./MembarCard";
 const Carousel = () => {
   return (
     <div className="carousel-container">
+      <div className="text-center p-4 lg:p-1 font-extrabold text-maincolor">MEMBERSHIP</div>
       <div className="carousel">
         <MembarCard
           image="/images/membership/bffa.png"
-          text="Bangladesh Freight Forward Association"
+      
         />
         <MembarCard
           image="/images/membership/bgcci.png"
-          text="Bangladesh-German Chamber of Commerce & Industry"
+        
         />
       </div>
     </div>

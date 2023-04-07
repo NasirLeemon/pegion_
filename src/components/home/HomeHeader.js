@@ -27,7 +27,7 @@ const HomeHeader = () => {
         muted
         onCanPlayThrough={handleVideoLoad}
       />
-      {!isVideoLoaded && <div className="loader">Loading...</div>}
+      {!isVideoLoaded && <div className="loader"></div>}
       <div className={`content ${isVideoLoaded ? "visible" : ""}`}>
         <AnimateHeading
           line="PIGEON LOGISTICS"

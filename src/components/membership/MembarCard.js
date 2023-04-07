@@ -8,7 +8,6 @@ const MembarCard = ({ image, text }) => {
         <img src={image} alt="" />
       </div>
       <div className="membercardText">
-        <h1 className="font-bold">Member of- </h1>
         <h2 className="text-[20px]">{text}</h2>
       </div>
     </div>

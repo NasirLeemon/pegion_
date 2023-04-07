@@ -9,7 +9,7 @@ const Achievements = () => {
     exit={{ x: "100%" }}
     transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <img className='p-5' src='/images/achievements.jpg' alt='achievements'/>
+      <img className='p-10' src='/images/achievements.jpg' alt='achievements'/>
     </motion.div>
   )
 }

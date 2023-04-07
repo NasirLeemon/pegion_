@@ -16,7 +16,7 @@
   .aboutBtns button {
   font-size: 15px;
   color: #053e6c;
-  padding: 15px 20px;
+  padding: 5px 10px;
   }
   
   .activeBtn {
@@ -45,8 +45,8 @@
   margin-bottom: 20px;
   }
   
-  .aboutBtns {
-  background-color: #fff;
+  .aboutBtns{
+  border: 1px solid var(--maincolor);
   }
   
   .aboutBtns button {
